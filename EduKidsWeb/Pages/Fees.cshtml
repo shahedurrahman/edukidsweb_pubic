@@ -1,0 +1,269 @@
+@page
+@model EduKidsWeb.Pages.FeesModel
+@{
+    ViewData["Title"] = "School Fees";
+}
+
+<!-- Hero Section -->
+<section class="relative bg-orange-400 overflow-hidden py-16 lg:py-24">
+    <!-- Decorative Elements -->
+    <div class="absolute inset-0">
+        <!-- Paper plane icon -->
+        <div class="absolute top-12 left-8 lg:left-16">
+            <div class="w-16 h-16 opacity-20">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" class="w-full h-full text-white">
+                    <path d="m3 3 3 9-3 9 19-9Z"></path>
+                    <path d="m6 12 16-6"></path>
+                </svg>
+            </div>
+        </div>
+
+        <!-- Hot air balloon -->
+        <div class="absolute top-8 right-8 lg:right-16">
+            <div class="w-20 h-20 opacity-20">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" class="w-full h-full text-white">
+                    <path d="M12 13v8"></path>
+                    <path d="M12 3a3 3 0 0 0-3 3v4a3 3 0 0 0 6 0V6a3 3 0 0 0-3-3Z"></path>
+                    <path d="m8 17 8 2-8 2"></path>
+                </svg>
+            </div>
+        </div>
+
+        <!-- Money/Calculator icon -->
+        <div class="absolute top-20 left-1/4">
+            <div class="w-8 h-8 opacity-20">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" class="w-full h-full text-white">
+                    <rect width="20" height="16" x="2" y="4" rx="2"></rect>
+                    <path d="m22 7-10 5L2 7"></path>
+                </svg>
+            </div>
+        </div>
+
+        <!-- Dollar sign -->
+        <div class="absolute top-32 right-1/4">
+            <div class="w-12 h-12 opacity-20">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" class="w-full h-full text-white">
+                    <line x1="12" x2="12" y1="2" y2="22"></line>
+                    <path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"></path>
+                </svg>
+            </div>
+        </div>
+
+        <!-- Calculator icon -->
+        <div class="absolute bottom-16 left-16">
+            <div class="w-10 h-10 opacity-20">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" class="w-full h-full text-white">
+                    <rect width="16" height="20" x="4" y="2" rx="2"></rect>
+                    <line x1="8" x2="16" y1="6" y2="6"></line>
+                    <line x1="16" x2="16" y1="14" y2="18"></line>
+                    <path d="m16 10 4 4-4 4"></path>
+                    <path d="M8 18v-4"></path>
+                    <path d="M8 10v4"></path>
+                </svg>
+            </div>
+        </div>
+    </div>
+
+    <!-- Wave decoration at bottom -->
+    <div class="absolute bottom-0 left-0 w-full">
+        <svg viewBox="0 0 1440 74" fill="none" xmlns="http://www.w3.org/2000/svg" class="w-full h-auto">
+            <path d="M0 74V0C120 24.6667 240 37 360 37C480 37 600 24.6667 720 0C840 24.6667 960 37 1080 37C1200 37 1320 24.6667 1440 0V74H0Z" fill="white" />
+        </svg>
+    </div>
+
+    <div class="relative mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+        <div class="text-center">
+            <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-4">
+                School Fees
+            </h1>
+
+            <!-- Breadcrumb -->
+            <nav class="flex justify-center items-center gap-2 text-white/90">
+                <a href="@Url.Page("/Index")" class="hover:text-white transition-colors duration-200 font-medium">
+                    Home
+                </a>
+                <span class="icon-[tabler--chevron-right] size-4"></span>
+                <span class="font-medium text-white">School Fees</span>
+            </nav>
+        </div>
+    </div>
+</section>
+
+<!-- Fees Structure Section -->
+<section class="py-16 lg:py-24 bg-gray-50">
+    <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+        <div class="text-center mb-12">
+            <h2 class="text-3xl lg:text-4xl font-bold text-gray-800 mb-4">School Fees Structure (Academic)</h2>
+            <div class="w-20 h-1 bg-orange-400 mx-auto"></div>
+        </div>
+
+        <!-- Fees Table -->
+        <div class="bg-white rounded-2xl p-6 lg:p-8 shadow-lg overflow-x-auto">
+            <table class="w-full min-w-[800px]">
+                <thead>
+                    <tr class="bg-orange-400 text-white">
+                        <th class="px-4 py-4 text-left font-semibold rounded-tl-lg">Grade</th>
+                        <th class="px-4 py-4 text-center font-semibold">Admission Fee<br><span class="text-sm font-normal">(One time)</span></th>
+                        <th class="px-4 py-4 text-center font-semibold">Tuition Fee<br><span class="text-sm font-normal">(Monthly)</span></th>
+                        <th class="px-4 py-4 text-center font-semibold">School Supplies<br><span class="text-sm font-normal">(Annually)</span></th>
+                        <th class="px-4 py-4 text-center font-semibold">Admission Form and Processing Fee<br><span class="text-sm font-normal">(One time)</span></th>
+                        <th class="px-4 py-4 text-center font-semibold rounded-tr-lg">Development Fee, Exam Fee, ECA and Miscellaneous Fee<br><span class="text-sm font-normal">(Annually)</span></th>
+                    </tr>
+                </thead>
+                <tbody class="divide-y divide-gray-200">
+                    <tr class="hover:bg-gray-50 transition-colors duration-200">
+                        <td class="px-4 py-4 font-semibold text-gray-800">Playgroup</td>
+                        <td class="px-4 py-4 text-center text-gray-700">80,000 BDT</td>
+                        <td class="px-4 py-4 text-center text-gray-700">6,500 BDT</td>
+                        <td class="px-4 py-4 text-center text-gray-700">6,500 BDT</td>
+                        <td class="px-4 py-4 text-center text-gray-700">1,500 BDT</td>
+                        <td class="px-4 py-4 text-center text-gray-700">10,000 BDT</td>
+                    </tr>
+                    <tr class="hover:bg-gray-50 transition-colors duration-200">
+                        <td class="px-4 py-4 font-semibold text-gray-800">Nursery</td>
+                        <td class="px-4 py-4 text-center text-gray-700">80,000 BDT</td>
+                        <td class="px-4 py-4 text-center text-gray-700">6,500 BDT</td>
+                        <td class="px-4 py-4 text-center text-gray-700">6,500 BDT</td>
+                        <td class="px-4 py-4 text-center text-gray-700">1,500 BDT</td>
+                        <td class="px-4 py-4 text-center text-gray-700">10,000 BDT</td>
+                    </tr>
+                    <tr class="hover:bg-gray-50 transition-colors duration-200">
+                        <td class="px-4 py-4 font-semibold text-gray-800">Lower KG</td>
+                        <td class="px-4 py-4 text-center text-gray-700">80,000 BDT</td>
+                        <td class="px-4 py-4 text-center text-gray-700">7,000 BDT</td>
+                        <td class="px-4 py-4 text-center text-gray-700">6,770 BDT</td>
+                        <td class="px-4 py-4 text-center text-gray-700">1,500 BDT</td>
+                        <td class="px-4 py-4 text-center text-gray-700">10,000 BDT</td>
+                    </tr>
+                    <tr class="hover:bg-gray-50 transition-colors duration-200">
+                        <td class="px-4 py-4 font-semibold text-gray-800">Upper KG</td>
+                        <td class="px-4 py-4 text-center text-gray-700">80,000 BDT</td>
+                        <td class="px-4 py-4 text-center text-gray-700">7,500 BDT</td>
+                        <td class="px-4 py-4 text-center text-gray-700">6,800 BDT</td>
+                        <td class="px-4 py-4 text-center text-gray-700">1,500 BDT</td>
+                        <td class="px-4 py-4 text-center text-gray-700">10,000 BDT</td>
+                    </tr>
+                    <tr class="hover:bg-gray-50 transition-colors duration-200">
+                        <td class="px-4 py-4 font-semibold text-gray-800">Grade I</td>
+                        <td class="px-4 py-4 text-center text-gray-700">80,000 BDT</td>
+                        <td class="px-4 py-4 text-center text-gray-700">8,000 BDT</td>
+                        <td class="px-4 py-4 text-center text-gray-700">6,500 BDT</td>
+                        <td class="px-4 py-4 text-center text-gray-700">1,500 BDT</td>
+                        <td class="px-4 py-4 text-center text-gray-700">10,000 BDT</td>
+                    </tr>
+                    <tr class="hover:bg-gray-50 transition-colors duration-200">
+                        <td class="px-4 py-4 font-semibold text-gray-800">Grade II</td>
+                        <td class="px-4 py-4 text-center text-gray-700">80,000 BDT</td>
+                        <td class="px-4 py-4 text-center text-gray-700">8,000 BDT</td>
+                        <td class="px-4 py-4 text-center text-gray-700">6,500 BDT</td>
+                        <td class="px-4 py-4 text-center text-gray-700">1,500 BDT</td>
+                        <td class="px-4 py-4 text-center text-gray-700">10,000 BDT</td>
+                    </tr>
+                    <tr class="hover:bg-gray-50 transition-colors duration-200">
+                        <td class="px-4 py-4 font-semibold text-gray-800">Grade III</td>
+                        <td class="px-4 py-4 text-center text-gray-700">90,000 BDT</td>
+                        <td class="px-4 py-4 text-center text-gray-700">8,500 BDT</td>
+                        <td class="px-4 py-4 text-center text-gray-700">6,500 BDT</td>
+                        <td class="px-4 py-4 text-center text-gray-700">1,500 BDT</td>
+                        <td class="px-4 py-4 text-center text-gray-700">10,000 BDT</td>
+                    </tr>
+                    <tr class="hover:bg-gray-50 transition-colors duration-200">
+                        <td class="px-4 py-4 font-semibold text-gray-800">Grade IV</td>
+                        <td class="px-4 py-4 text-center text-gray-700">90,000 BDT</td>
+                        <td class="px-4 py-4 text-center text-gray-700">8,500 BDT</td>
+                        <td class="px-4 py-4 text-center text-gray-700">6,500 BDT</td>
+                        <td class="px-4 py-4 text-center text-gray-700">1,500 BDT</td>
+                        <td class="px-4 py-4 text-center text-gray-700">10,000 BDT</td>
+                    </tr>
+                    <tr class="hover:bg-gray-50 transition-colors duration-200">
+                        <td class="px-4 py-4 font-semibold text-gray-800">Grade V</td>
+                        <td class="px-4 py-4 text-center text-gray-700">90,000 BDT</td>
+                        <td class="px-4 py-4 text-center text-gray-700">9,000 BDT</td>
+                        <td class="px-4 py-4 text-center text-gray-700">6,500 BDT</td>
+                        <td class="px-4 py-4 text-center text-gray-700">1,500 BDT</td>
+                        <td class="px-4 py-4 text-center text-gray-700">10,000 BDT</td>
+                    </tr>
+                    <tr class="hover:bg-gray-50 transition-colors duration-200">
+                        <td class="px-4 py-4 font-semibold text-gray-800">Grade VI</td>
+                        <td class="px-4 py-4 text-center text-gray-700">100,000 BDT</td>
+                        <td class="px-4 py-4 text-center text-gray-700">9,000 BDT</td>
+                        <td class="px-4 py-4 text-center text-gray-700">6,500 BDT</td>
+                        <td class="px-4 py-4 text-center text-gray-700">1,500 BDT</td>
+                        <td class="px-4 py-4 text-center text-gray-700">10,000 BDT</td>
+                    </tr>
+                    <tr class="hover:bg-gray-50 transition-colors duration-200">
+                        <td class="px-4 py-4 font-semibold text-gray-800">Grade VII</td>
+                        <td class="px-4 py-4 text-center text-gray-700">100,000 BDT</td>
+                        <td class="px-4 py-4 text-center text-gray-700">9,500 BDT</td>
+                        <td class="px-4 py-4 text-center text-gray-700">6,500 BDT</td>
+                        <td class="px-4 py-4 text-center text-gray-700">1,500 BDT</td>
+                        <td class="px-4 py-4 text-center text-gray-700">10,000 BDT</td>
+                    </tr>
+                    <tr class="hover:bg-gray-50 transition-colors duration-200">
+                        <td class="px-4 py-4 font-semibold text-gray-800">Grade VIII</td>
+                        <td class="px-4 py-4 text-center text-gray-700">100,000 BDT</td>
+                        <td class="px-4 py-4 text-center text-gray-700">10,000 BDT</td>
+                        <td class="px-4 py-4 text-center text-gray-700">6,500 BDT</td>
+                        <td class="px-4 py-4 text-center text-gray-700">1,500 BDT</td>
+                        <td class="px-4 py-4 text-center text-gray-700">10,000 BDT</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</section>
+
+<!-- Important Notes Section -->
+<section class="py-16 lg:py-24 bg-white">
+    <div class="mx-auto max-w-5xl px-4 sm:px-6 lg:px-8">
+        <div class="text-center mb-12">
+            <h2 class="text-3xl lg:text-4xl font-bold text-gray-800 mb-4">Please Note</h2>
+            <div class="w-20 h-1 bg-orange-400 mx-auto"></div>
+        </div>
+
+        <div class="bg-orange-50 rounded-2xl p-8 lg:p-12">
+            <ul class="space-y-6 text-gray-700 leading-relaxed">
+                <li class="flex items-start gap-4">
+                    <span class="icon-[tabler--alert-circle] text-orange-500 size-6 flex-shrink-0 mt-0.5"></span>
+                    <span>Any additional Govt. VAT/Taxes levied in the future must be paid on top of the fees, if applicable</span>
+                </li>
+                <li class="flex items-start gap-4">
+                    <span class="icon-[tabler--calendar] text-orange-500 size-6 flex-shrink-0 mt-0.5"></span>
+                    <span>You are asked to pay your child's tuition fees by the <strong>10th of each month</strong>.</span>
+                </li>
+                <li class="flex items-start gap-4">
+                    <span class="icon-[tabler--clock] text-orange-500 size-6 flex-shrink-0 mt-0.5"></span>
+                    <span><strong>Late fees:</strong> - Tk. 200 by the end of the Calendar month and Tk. 500 if paid in the next month.</span>
+                </li>
+                <li class="flex items-start gap-4">
+                    <span class="icon-[tabler--building] text-orange-500 size-6 flex-shrink-0 mt-0.5"></span>
+                    <span>Development Fee, Exam Fee, ECA and Miscellaneous Fee BDT 10,000 Taka is payable annually.</span>
+                </li>
+                <li class="flex items-start gap-4">
+                    <span class="icon-[tabler--plus] text-orange-500 size-6 flex-shrink-0 mt-0.5"></span>
+                    <span>Required fees will be added for any other programs offered by the school (for example- Convocation, Annual Picnic, Annual Sports etc.)</span>
+                </li>
+                <li class="flex items-start gap-4">
+                    <span class="icon-[tabler--rotate-clockwise] text-orange-500 size-6 flex-shrink-0 mt-0.5"></span>
+                    <span>Students re-enrolling after 2 (two) years of absence must go through a new application process including payment of all due fees.</span>
+                </li>
+                <li class="flex items-start gap-4">
+                    <span class="icon-[tabler--ban] text-red-500 size-6 flex-shrink-0 mt-0.5"></span>
+                    <span><strong>All fees are non-refundable.</strong></span>
+                </li>
+            </ul>
+        </div>
+
+        <!-- Contact for More Information -->
+        <div class="mt-12 text-center">
+            <div class="bg-white rounded-2xl p-8 shadow-lg border border-gray-200">
+                <h3 class="text-xl font-bold text-gray-800 mb-4">Need More Information?</h3>
+                <p class="text-gray-600 mb-6">For any queries regarding fees or payment options, please feel free to contact us.</p>
+                <a href="@Url.Page("/Contact")" class="bg-orange-400 hover:bg-orange-500 text-white px-8 py-3 rounded-full font-semibold transition-colors duration-200 inline-flex items-center gap-2">
+                    Contact Us
+                    <span class="icon-[tabler--arrow-right] size-5"></span>
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
