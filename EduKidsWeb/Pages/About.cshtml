@@ -1,0 +1,208 @@
+@page
+@model EduKidsWeb.Pages.AboutModel
+@{
+    ViewData["Title"] = "About Us";
+}
+
+<!-- Hero Section -->
+<section class="relative bg-orange-400 overflow-hidden py-16 lg:py-24">
+    <!-- Decorative Elements -->
+    <div class="absolute inset-0">
+        <!-- Paper plane icon -->
+        <div class="absolute top-12 left-8 lg:left-16">
+            <div class="w-16 h-16 opacity-20">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" class="w-full h-full text-white">
+                    <path d="m3 3 3 9-3 9 19-9Z"></path>
+                    <path d="m6 12 16-6"></path>
+                </svg>
+            </div>
+        </div>
+
+        <!-- Hot air balloon -->
+        <div class="absolute top-8 right-8 lg:right-16">
+            <div class="w-20 h-20 opacity-20">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" class="w-full h-full text-white">
+                    <path d="M12 13v8"></path>
+                    <path d="M12 3a3 3 0 0 0-3 3v4a3 3 0 0 0 6 0V6a3 3 0 0 0-3-3Z"></path>
+                    <path d="m8 17 8 2-8 2"></path>
+                </svg>
+            </div>
+        </div>
+
+        <!-- Stars decoration -->
+        <div class="absolute top-20 left-1/4">
+            <div class="w-8 h-8 opacity-20">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" class="w-full h-full text-white">
+                    <polygon points="12,2 15.09,8.26 22,9.27 17,14.14 18.18,21.02 12,17.77 5.82,21.02 7,14.14 2,9.27 8.91,8.26"></polygon>
+                </svg>
+            </div>
+        </div>
+
+        <!-- Airplane -->
+        <div class="absolute top-32 right-1/4">
+            <div class="w-12 h-12 opacity-20">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" class="w-full h-full text-white">
+                    <path d="M17.8 19.2 16 11l3.5-3.5C21 6 21.5 4 21 3c-1-.5-3 0-4.5 1.5L13 8 4.8 6.2c-.5-.1-.9.1-1.1.5l-.3.5c-.2.5-.1 1 .3 1.3L9 12l-2 3H4l-1 1 3 2 2 3 1-1v-3l3-2 3.5 5.3c.3.4.8.5 1.3.3l.5-.2c.4-.3.6-.7.5-1.2z"></path>
+                </svg>
+            </div>
+        </div>
+
+        <!-- Sun icon -->
+        <div class="absolute bottom-16 left-16">
+            <div class="w-10 h-10 opacity-20">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" class="w-full h-full text-white">
+                    <circle cx="12" cy="12" r="4"></circle>
+                    <path d="m12 2 0 2"></path>
+                    <path d="m12 20 0 2"></path>
+                    <path d="m4.93 4.93 1.41 1.41"></path>
+                    <path d="m17.66 17.66 1.41 1.41"></path>
+                    <path d="m2 12 2 0"></path>
+                    <path d="m20 12 2 0"></path>
+                    <path d="m6.34 17.66-1.41 1.41"></path>
+                    <path d="m19.07 4.93-1.41 1.41"></path>
+                </svg>
+            </div>
+        </div>
+
+        <!-- Child with cap (bottom left) -->
+        <div class="absolute bottom-20 left-8">
+            <div class="w-12 h-12 opacity-20">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" class="w-full h-full text-white">
+                    <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+                    <circle cx="12" cy="7" r="4"></circle>
+                </svg>
+            </div>
+        </div>
+
+        <!-- Bee icon -->
+        <div class="absolute bottom-32 right-20">
+            <div class="w-8 h-8 opacity-20">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" class="w-full h-full text-white">
+                    <path d="M9 9V6.5a3.5 3.5 0 1 1 7 0V9"></path>
+                    <path d="M9 9h6l6 6-6 6H9l-6-6 6-6Z"></path>
+                </svg>
+            </div>
+        </div>
+    </div>
+
+    <!-- Wave decoration at bottom -->
+    <div class="absolute bottom-0 left-0 w-full">
+        <svg viewBox="0 0 1440 74" fill="none" xmlns="http://www.w3.org/2000/svg" class="w-full h-auto">
+            <path d="M0 74V0C120 24.6667 240 37 360 37C480 37 600 24.6667 720 0C840 24.6667 960 37 1080 37C1200 37 1320 24.6667 1440 0V74H0Z" fill="white" />
+        </svg>
+    </div>
+
+    <div class="relative mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+        <div class="text-center">
+            <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-4">
+                About Us
+            </h1>
+
+            <!-- Breadcrumb -->
+            <nav class="flex justify-center items-center gap-2 text-white/90">
+                <a href="@Url.Page("/Index")" class="hover:text-white transition-colors duration-200 font-medium">
+                    Home
+                </a>
+                <span class="icon-[tabler--chevron-right] size-4"></span>
+                <span class="font-medium text-white">About Us</span>
+            </nav>
+        </div>
+    </div>
+</section>
+
+<!-- History Section -->
+<section class="py-16 lg:py-24 bg-gray-50">
+    <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+        <div class="text-center mb-12">
+            <h2 class="text-3xl lg:text-4xl font-bold text-gray-800 mb-4">Our History</h2>
+            <div class="w-20 h-1 bg-orange-400 mx-auto"></div>
+        </div>
+
+        <div class="max-w-4xl mx-auto">
+            <div class="bg-white rounded-2xl p-8 lg:p-12 shadow-lg">
+                <p class="text-gray-700 text-lg leading-relaxed mb-6">
+                    Education is the process of imparting or acquiring knowledge, values, and skills that, ideally, contribute to improving learners and society. However, the goals and methods of education vary considerably between cultures and religions. This distinction is seen in how education is practiced in Islamic and Western societies.
+                </p>
+                <p class="text-gray-700 text-lg leading-relaxed">
+                    Islamic education centres on teaching Islam and its religious way of life. The source of Islamic education is the Qur'an, the central religious text of Islam. What does the Qur'an teach? The Qur'an imparts to Muslims the core beliefs of Islam and the teachings of the Prophet Muhammad. For Muslim education, the Qur'an is the sacred writings of the Prophet Muhammad revealed to him by the Archangel Gabriel. Muslims regard the Prophet's revelations in the Qur'an as sacred, representing the word of God. Consequently, education in Islam and its teachings are paramount in a young person's development.
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Governing Board Section -->
+<section class="py-16 lg:py-24 bg-white">
+    <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+        <div class="text-center mb-16">
+            <h2 class="text-3xl lg:text-4xl font-bold text-gray-800 mb-4">Governing Board Members</h2>
+            <div class="w-20 h-1 bg-orange-400 mx-auto"></div>
+        </div>
+
+        <!-- Chairman Profile -->
+        <div class="max-w-5xl mx-auto mb-16">
+            <div class="bg-orange-50 rounded-2xl p-8 lg:p-12">
+                <div class="flex flex-col lg:flex-row items-center lg:items-start gap-8">
+                    <div class="flex-shrink-0">
+                        <img src="https://i.pravatar.cc/200?img=50" alt="Dr Ehsanul Haque" class="w-32 h-32 lg:w-40 lg:h-40 rounded-full object-cover border-4 border-orange-400">
+                    </div>
+                    <div class="flex-1 text-center lg:text-left">
+                        <h3 class="text-2xl lg:text-3xl font-bold text-gray-800 mb-2">Dr Ehsanul Haque</h3>
+                        <p class="text-orange-600 font-semibold text-lg mb-4">Chairman</p>
+                        <p class="text-gray-700 leading-relaxed">
+                            Dr Ehsanul Haque graduated from BUET and joined the Department of Materials and Metallurgical Engineering as a Lecturer. He in time became a Professor, Head of the Department, and Dean of Engineering at BUET. He did his Masters from the University of Sheffield and PhD from the University of Birmingham in the UK. He was a member of the board of trustees of Ahsanullah University of Science and Technology, Dhaka. He was the first Vice Chancellor of KUET and served as a member of the University Grants Commission of Bangladesh. He is now involved with the Bangladesh Ethics Foundation for the propagation of ethical values.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Other Board Members -->
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <!-- Principal -->
+            <div class="bg-gray-50 rounded-2xl p-6 text-center">
+                <div class="mb-6">
+                    <img src="https://i.pravatar.cc/160?img=20" alt="Suraiya Khan" class="w-24 h-24 rounded-full mx-auto object-cover border-4 border-orange-400">
+                </div>
+                <h3 class="text-xl font-bold text-gray-800 mb-2">Suraiya Khan</h3>
+                <p class="text-orange-600 font-semibold">Principal</p>
+            </div>
+
+            <!-- Vice Principal -->
+            <div class="bg-gray-50 rounded-2xl p-6 text-center">
+                <div class="mb-6">
+                    <img src="https://i.pravatar.cc/160?img=21" alt="Samia Yousuf" class="w-24 h-24 rounded-full mx-auto object-cover border-4 border-orange-400">
+                </div>
+                <h3 class="text-xl font-bold text-gray-800 mb-2">Samia Yousuf</h3>
+                <p class="text-orange-600 font-semibold">Vice Principal</p>
+            </div>
+
+            <!-- Independent Director -->
+            <div class="bg-gray-50 rounded-2xl p-6 text-center">
+                <div class="mb-6">
+                    <img src="https://i.pravatar.cc/160?img=22" alt="Nasir Ahmed" class="w-24 h-24 rounded-full mx-auto object-cover border-4 border-orange-400">
+                </div>
+                <h3 class="text-xl font-bold text-gray-800 mb-2">Nasir Ahmed</h3>
+                <p class="text-orange-600 font-semibold">Independent Director</p>
+            </div>
+
+            <!-- Director & COO -->
+            <div class="bg-gray-50 rounded-2xl p-6 text-center">
+                <div class="mb-6">
+                    <img src="https://i.pravatar.cc/160?img=23" alt="Nafis Ahmed" class="w-24 h-24 rounded-full mx-auto object-cover border-4 border-orange-400">
+                </div>
+                <h3 class="text-xl font-bold text-gray-800 mb-2">Nafis Ahmed</h3>
+                <p class="text-orange-600 font-semibold">Director & COO</p>
+            </div>
+
+            <!-- Manager -->
+            <div class="bg-gray-50 rounded-2xl p-6 text-center md:col-span-2 lg:col-span-1">
+                <div class="mb-6">
+                    <img src="https://i.pravatar.cc/160?img=24" alt="Md. Mohibbul Islam" class="w-24 h-24 rounded-full mx-auto object-cover border-4 border-orange-400">
+                </div>
+                <h3 class="text-xl font-bold text-gray-800 mb-2">Md. Mohibbul Islam</h3>
+                <p class="text-orange-600 font-semibold">Manager (Accounts & IT)</p>
+            </div>
+        </div>
+    </div>
+</section>
