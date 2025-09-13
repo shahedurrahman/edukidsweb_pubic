@@ -1,0 +1,6 @@
+<Solution>
+  <Folder Name="/.github/">
+    <File Path="copilot-instructions.md" />
+  </Folder>
+  <Project Path="EduKidsWeb/EduKidsWeb.csproj" Id="3e4d19b3-559b-4233-8c4c-bf1582208594" />
+</Solution>
