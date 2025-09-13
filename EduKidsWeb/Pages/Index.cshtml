@@ -69,11 +69,98 @@
             <!-- Image Section -->
             <div class="relative">
                 <!-- Main Image Container -->
-                <div class="relative rounded-3xl overflow-hidden shadow-2xl">
-                    <img src="https://images.unsplash.com/photo-1544717297-fa95b6ee9643?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Happy children learning together" class="w-full h-[400px] lg:h-[500px] object-cover">
+                <div class="relative rounded-3xl overflow-hidden shadow-2xl bg-gradient-to-br from-orange-100 to-blue-100 p-8">
+                    <!-- Custom SVG Illustration -->
+                    <svg viewBox="0 0 400 320" class="w-full h-[400px] lg:h-[500px]">
+                        <!-- Background elements -->
+                        <defs>
+                            <linearGradient id="skyGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+                                <stop offset="0%" style="stop-color:#E0F2FE;stop-opacity:1" />
+                                <stop offset="100%" style="stop-color:#FEF3C7;stop-opacity:1" />
+                            </linearGradient>
+                        </defs>
+
+                        <!-- Sky background -->
+                        <rect width="400" height="320" fill="url(#skyGrad)" />
+
+                        <!-- School building -->
+                        <rect x="50" y="180" width="300" height="120" fill="#F97316" rx="8" />
+                        <rect x="60" y="190" width="280" height="100" fill="#FFFFFF" rx="4" />
+
+                        <!-- School dome (Islamic architecture) -->
+                        <ellipse cx="200" cy="180" rx="60" ry="30" fill="#10B981" />
+                        <ellipse cx="200" cy="175" rx="50" ry="25" fill="#34D399" />
+
+                        <!-- Minaret-style tower -->
+                        <rect x="320" y="120" width="20" height="80" fill="#F97316" />
+                        <ellipse cx="330" cy="120" rx="15" ry="10" fill="#10B981" />
+                        <circle cx="330" cy="110" r="4" fill="#FCD34D" />
+
+                        <!-- Windows -->
+                        <rect x="80" y="210" width="25" height="30" fill="#BFDBFE" rx="2" />
+                        <rect x="120" y="210" width="25" height="30" fill="#BFDBFE" rx="2" />
+                        <rect x="160" y="210" width="25" height="30" fill="#BFDBFE" rx="2" />
+                        <rect x="255" y="210" width="25" height="30" fill="#BFDBFE" rx="2" />
+                        <rect x="295" y="210" width="25" height="30" fill="#BFDBFE" rx="2" />
+
+                        <!-- Main entrance -->
+                        <rect x="185" y="220" width="30" height="50" fill="#8B5CF6" rx="15" />
+
+                        <!-- Children figures -->
+                        <!-- Child 1 -->
+                        <circle cx="120" cy="280" r="8" fill="#FED7AA" />
+                        <rect x="115" y="285" width="10" height="15" fill="#3B82F6" rx="2" />
+
+                        <!-- Child 2 -->
+                        <circle cx="150" cy="275" r="8" fill="#FED7AA" />
+                        <rect x="145" y="280" width="10" height="15" fill="#EC4899" rx="2" />
+
+                        <!-- Child 3 -->
+                        <circle cx="180" cy="280" r="8" fill="#FED7AA" />
+                        <rect x="175" y="285" width="10" height="15" fill="#10B981" rx="2" />
+
+                        <!-- Child 4 -->
+                        <circle cx="220" cy="280" r="8" fill="#FED7AA" />
+                        <rect x="215" y="285" width="10" height="15" fill="#F59E0B" rx="2" />
+
+                        <!-- Child 5 -->
+                        <circle cx="250" cy="275" r="8" fill="#FED7AA" />
+                        <rect x="245" y="280" width="10" height="15" fill="#8B5CF6" rx="2" />
+
+                        <!-- Child 6 -->
+                        <circle cx="280" cy="280" r="8" fill="#FED7AA" />
+                        <rect x="275" y="285" width="10" height="15" fill="#EF4444" rx="2" />
+
+                        <!-- Books floating around -->
+                        <rect x="90" y="160" width="12" height="8" fill="#F59E0B" rx="1" transform="rotate(15 96 164)" />
+                        <rect x="300" y="150" width="12" height="8" fill="#10B981" rx="1" transform="rotate(-20 306 154)" />
+                        <rect x="130" y="140" width="12" height="8" fill="#3B82F6" rx="1" transform="rotate(25 136 144)" />
+
+                        <!-- Stars in sky -->
+                        <polygon points="100,50 103,59 112,59 105,65 108,74 100,68 92,74 95,65 88,59 97,59" fill="#FCD34D" />
+                        <polygon points="320,60 322,66 328,66 323,70 325,76 320,72 315,76 317,70 312,66 318,66" fill="#FCD34D" />
+                        <polygon points="60,80 62,86 68,86 63,90 65,96 60,92 55,96 57,90 52,86 58,86" fill="#FCD34D" />
+
+                        <!-- Clouds -->
+                        <ellipse cx="70" cy="70" rx="15" ry="8" fill="#FFFFFF" opacity="0.8" />
+                        <ellipse cx="80" cy="65" rx="12" ry="6" fill="#FFFFFF" opacity="0.8" />
+                        <ellipse cx="350" cy="90" rx="18" ry="10" fill="#FFFFFF" opacity="0.8" />
+                        <ellipse cx="365" cy="85" rx="15" ry="8" fill="#FFFFFF" opacity="0.8" />
+
+                        <!-- Islamic symbol (crescent) -->
+                        <path d="M 200 60 A 15 15 0 1 0 200 90 A 10 10 0 1 1 200 60" fill="#10B981" />
+                        <circle cx="210" cy="70" r="3" fill="#FCD34D" />
+
+                        <!-- School name banner -->
+                        <rect x="120" y="100" width="160" height="25" fill="#F97316" rx="12" />
+                        <text x="200" y="118" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#FFFFFF">EduKids International</text>
+
+                        <!-- Cambridge text -->
+                        <text x="200" y="305" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" font-weight="bold" fill="#6B7280">Cambridge Curriculum • Islamic Values</text>
+                    </svg>
 
                     <!-- Overlay for better text contrast if needed -->
-                    <div class="absolute inset-0 bg-gradient-to-t from-black/10 to-transparent"></div>
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/5 to-transparent rounded-3xl"></div>
                 </div>
 
                 <!-- Floating Elements around Image -->
