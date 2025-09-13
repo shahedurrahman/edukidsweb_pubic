@@ -5,39 +5,89 @@
 }
 
 <!-- Navigation Bar -->
-<nav class="navbar">
-    <div class="mx-auto w-full max-w-7xl px-4 py-4 sm:px-6 lg:flex lg:items-center lg:gap-2 lg:px-8">
-        <div class="navbar-start items-center justify-between max-lg:w-full">
-            <a class="text-base-content flex items-center gap-3 text-xl font-bold lg:hidden" href="@Url.Page("/Index")">
-                <span class="icon-[tabler--school] text-primary size-8"></span>
-                EduKids
-            </a>
+<nav class="navbar bg-white shadow-sm border-b border-gray-100">
+    <div class="mx-auto w-full max-w-7xl px-4 py-3 sm:px-6 lg:px-8">
+        <div class="flex w-full items-center justify-between">
+            <!-- Logo Section -->
+            <div class="navbar-start">
+                <a class="flex items-center gap-3 text-xl font-bold text-gray-800" href="@Url.Page("/Index")">
+                    <div class="w-10 h-10 bg-orange-400 rounded-lg flex items-center justify-center">
+                        <span class="icon-[tabler--school] text-white size-6"></span>
+                    </div>
+                    <span class="text-gray-800">EduKids</span>
+                </a>
+            </div>
 
-            <div class="flex items-center lg:hidden">
-                <span class="icon-[tabler--search] hover:text-primary text-base-content active:text-primary me-6 size-5 cursor-pointer"></span>
-                <button type="button" class="collapse-toggle btn btn-outline btn-secondary btn-square" data-collapse="#navbar-eduKids" aria-controls="navbar-eduKids" aria-label="Toggle navigation">
-                    <span class="icon-[tabler--menu-2] collapse-open:hidden size-5.5"></span>
-                    <span class="icon-[tabler--x] collapse-open:block hidden size-5.5"></span>
+            <!-- Navigation Menu -->
+            <div class="navbar-center hidden lg:flex">
+                <div class="flex items-center gap-8 text-base font-medium">
+                    <a href="@Url.Page("/Index")" class="text-gray-700 hover:text-orange-500 transition-colors duration-200 flex items-center gap-1">
+                        Home
+                        <span class="icon-[tabler--chevron-down] size-4"></span>
+                    </a>
+                    <a href="#about" class="text-gray-700 hover:text-orange-500 transition-colors duration-200">
+                        About Us
+                    </a>
+                    <a href="#academics" class="text-gray-700 hover:text-orange-500 transition-colors duration-200 flex items-center gap-1">
+                        Academics
+                        <span class="icon-[tabler--chevron-down] size-4"></span>
+                    </a>
+                    <a href="#admissions" class="text-gray-700 hover:text-orange-500 transition-colors duration-200 flex items-center gap-1">
+                        Admissions
+                        <span class="icon-[tabler--chevron-down] size-4"></span>
+                    </a>
+                    <a href="#contact" class="text-gray-700 hover:text-orange-500 transition-colors duration-200">
+                        Contact
+                    </a>
+                </div>
+            </div>
+
+            <!-- Right Side Actions -->
+            <div class="navbar-end flex items-center gap-4">
+                <!-- Call Us Section -->
+                <div class="hidden lg:flex items-center gap-3">
+                    <div class="w-10 h-10 bg-orange-100 rounded-full flex items-center justify-center">
+                        <span class="icon-[tabler--phone] text-orange-500 size-5"></span>
+                    </div>
+                    <div class="text-sm">
+                        <div class="text-gray-500 font-medium">Call Us Now</div>
+                        <div class="text-gray-800 font-semibold">+1-555-123-4567</div>
+                    </div>
+                </div>
+
+                <!-- Book A Visit Button -->
+                <button class="btn bg-orange-400 hover:bg-orange-500 text-white border-none px-6 py-2 rounded-full font-medium transition-colors duration-200 flex items-center gap-2">
+                    Book A Visit
+                    <span class="icon-[tabler--arrow-right] size-4"></span>
+                </button>
+
+                <!-- Mobile Menu Toggle -->
+                <button type="button" class="lg:hidden btn btn-ghost btn-square" data-collapse="#navbar-eduKids" aria-controls="navbar-eduKids" aria-label="Toggle navigation">
+                    <span class="icon-[tabler--menu-2] size-6"></span>
                 </button>
             </div>
         </div>
 
-        <div id="navbar-eduKids" class="lg:navbar-center transition-height collapse hidden grow overflow-hidden duration-300 lg:flex">
-            <div class="text-base-content flex gap-6 text-base font-medium max-lg:mt-4 max-lg:flex-col lg:items-center lg:gap-16">
-                <a href="@Url.Page("/Index")" class="hover:text-primary active:text-primary">Home</a>
-                <a href="#about" class="hover:text-primary active:text-primary">About</a>
-                <a class="text-base-content flex items-center gap-3 text-xl font-bold max-lg:hidden" href="@Url.Page("/Index")">
-                    <span class="icon-[tabler--school] text-primary size-8"></span>
-                    EduKids
-                </a>
-                <a href="#academics" class="hover:text-primary active:text-primary">Academics</a>
-                <a href="#admissions" class="hover:text-primary active:text-primary">Admissions</a>
-                <a href="#contact" class="hover:text-primary active:text-primary">Contact</a>
+        <!-- Mobile Menu -->
+        <div id="navbar-eduKids" class="lg:hidden collapse hidden w-full mt-4 border-t border-gray-100 pt-4">
+            <div class="flex flex-col gap-4">
+                <a href="@Url.Page("/Index")" class="text-gray-700 hover:text-orange-500 transition-colors duration-200 py-2">Home</a>
+                <a href="#about" class="text-gray-700 hover:text-orange-500 transition-colors duration-200 py-2">About Us</a>
+                <a href="#academics" class="text-gray-700 hover:text-orange-500 transition-colors duration-200 py-2">Academics</a>
+                <a href="#admissions" class="text-gray-700 hover:text-orange-500 transition-colors duration-200 py-2">Admissions</a>
+                <a href="#contact" class="text-gray-700 hover:text-orange-500 transition-colors duration-200 py-2">Contact</a>
+                
+                <!-- Mobile Call Section -->
+                <div class="flex items-center gap-3 py-2 border-t border-gray-100 mt-2 pt-4">
+                    <div class="w-8 h-8 bg-orange-100 rounded-full flex items-center justify-center">
+                        <span class="icon-[tabler--phone] text-orange-500 size-4"></span>
+                    </div>
+                    <div class="text-sm">
+                        <div class="text-gray-500">Call Us Now</div>
+                        <div class="text-gray-800 font-semibold">+1-555-123-4567</div>
+                    </div>
+                </div>
             </div>
-        </div>
-
-        <div class="navbar-end max-lg:hidden">
-            <span class="icon-[tabler--search] hover:text-primary active:text-primary text-base-content size-5 cursor-pointer"></span>
         </div>
     </div>
 </nav>
