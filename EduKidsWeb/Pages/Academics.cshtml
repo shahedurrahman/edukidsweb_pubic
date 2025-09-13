@@ -1,0 +1,381 @@
+@page
+@model EduKidsWeb.Pages.AcademicsModel
+@{
+    ViewData["Title"] = "Academics";
+}
+
+<!-- Hero Section -->
+<section class="relative bg-orange-400 overflow-hidden py-16 lg:py-24">
+    <!-- Decorative Elements -->
+    <div class="absolute inset-0">
+        <!-- Book icon -->
+        <div class="absolute top-12 left-8 lg:left-16">
+            <div class="w-16 h-16 opacity-20">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" class="w-full h-full text-white">
+                    <path d="M4 19.5v-15A2.5 2.5 0 0 1 6.5 2H20v20H6.5a2.5 2.5 0 0 1 0-5H20"></path>
+                </svg>
+            </div>
+        </div>
+
+        <!-- Graduation cap -->
+        <div class="absolute top-8 right-8 lg:right-16">
+            <div class="w-20 h-20 opacity-20">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" class="w-full h-full text-white">
+                    <path d="M3 12l9-9 9 9"></path>
+                    <path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-7"></path>
+                    <path d="m16 6 4 14 3-8-3-6-4 0"></path>
+                </svg>
+            </div>
+        </div>
+
+        <!-- Pencil icon -->
+        <div class="absolute top-20 left-1/4">
+            <div class="w-8 h-8 opacity-20">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" class="w-full h-full text-white">
+                    <path d="M17 3a2.85 2.83 0 1 1 4 4L7.5 20.5 2 22l1.5-5.5Z"></path>
+                    <path d="m15 5 4 4"></path>
+                </svg>
+            </div>
+        </div>
+
+        <!-- Globe icon -->
+        <div class="absolute top-32 right-1/4">
+            <div class="w-12 h-12 opacity-20">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" class="w-full h-full text-white">
+                    <circle cx="12" cy="12" r="10"></circle>
+                    <path d="m4.9 4.9 14.2 14.2"></path>
+                    <path d="m4.9 19.1 14.2-14.2"></path>
+                </svg>
+            </div>
+        </div>
+
+        <!-- Star icon -->
+        <div class="absolute bottom-16 left-16">
+            <div class="w-10 h-10 opacity-20">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" class="w-full h-full text-white">
+                    <polygon points="12,2 15.09,8.26 22,9.27 17,14.14 18.18,21.02 12,17.77 5.82,21.02 7,14.14 2,9.27 8.91,8.26"></polygon>
+                </svg>
+            </div>
+        </div>
+    </div>
+
+    <!-- Wave decoration at bottom -->
+    <div class="absolute bottom-0 left-0 w-full">
+        <svg viewBox="0 0 1440 74" fill="none" xmlns="http://www.w3.org/2000/svg" class="w-full h-auto">
+            <path d="M0 74V0C120 24.6667 240 37 360 37C480 37 600 24.6667 720 0C840 24.6667 960 37 1080 37C1200 37 1320 24.6667 1440 0V74H0Z" fill="white" />
+        </svg>
+    </div>
+
+    <div class="relative mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+        <div class="text-center">
+            <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-4">
+                Academics
+            </h1>
+            <p class="text-xl text-white/90 mb-6 max-w-2xl mx-auto">
+                Excellence in Cambridge Education with Islamic Values
+            </p>
+
+            <!-- Breadcrumb -->
+            <nav class="flex justify-center items-center gap-2 text-white/90">
+                <a href="@Url.Page("/Index")" class="hover:text-white transition-colors duration-200 font-medium">
+                    Home
+                </a>
+                <span class="icon-[tabler--chevron-right] size-4"></span>
+                <span class="font-medium text-white">Academics</span>
+            </nav>
+        </div>
+    </div>
+</section>
+
+<!-- Cambridge Curriculum Section -->
+<section class="py-16 lg:py-24 bg-white">
+    <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+        <div class="text-center mb-16">
+            <h2 class="text-3xl lg:text-4xl font-bold text-gray-800 mb-4">Cambridge International Curriculum</h2>
+            <div class="w-20 h-1 bg-orange-400 mx-auto mb-6"></div>
+            <p class="text-lg text-gray-600 max-w-3xl mx-auto">
+                At EduKids International School, we follow the prestigious Cambridge International Curriculum,
+                providing world-class education that prepares students for global success while maintaining strong Islamic values.
+            </p>
+        </div>
+
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+            <!-- Content -->
+            <div class="space-y-8">
+                <div class="flex items-start gap-4">
+                    <div class="w-12 h-12 bg-orange-100 rounded-full flex items-center justify-center flex-shrink-0">
+                        <span class="icon-[tabler--world] text-orange-500 size-6"></span>
+                    </div>
+                    <div>
+                        <h3 class="text-xl font-bold text-gray-800 mb-2">Global Recognition</h3>
+                        <p class="text-gray-600">
+                            The Cambridge International Curriculum is recognized by universities and employers worldwide,
+                            opening doors to international opportunities for our students.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="flex items-start gap-4">
+                    <div class="w-12 h-12 bg-orange-100 rounded-full flex items-center justify-center flex-shrink-0">
+                        <span class="icon-[tabler--brain] text-orange-500 size-6"></span>
+                    </div>
+                    <div>
+                        <h3 class="text-xl font-bold text-gray-800 mb-2">Critical Thinking</h3>
+                        <p class="text-gray-600">
+                            Our curriculum develops critical thinking, problem-solving skills, and creativity,
+                            preparing students to tackle real-world challenges with confidence.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="flex items-start gap-4">
+                    <div class="w-12 h-12 bg-orange-100 rounded-full flex items-center justify-center flex-shrink-0">
+                        <span class="icon-[tabler--users] text-orange-500 size-6"></span>
+                    </div>
+                    <div>
+                        <h3 class="text-xl font-bold text-gray-800 mb-2">Personalized Learning</h3>
+                        <p class="text-gray-600">
+                            Small class sizes and individualized attention ensure that every student receives
+                            the support they need to reach their full potential.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Image Placeholder -->
+            <div class="bg-gradient-to-br from-orange-100 to-orange-200 rounded-2xl p-8 h-96 flex items-center justify-center">
+                <div class="text-center">
+                    <div class="w-24 h-24 bg-white rounded-full flex items-center justify-center mx-auto mb-4">
+                        <span class="icon-[tabler--school] text-orange-500 size-12"></span>
+                    </div>
+                    <h4 class="text-xl font-bold text-gray-800 mb-2">Cambridge Excellence</h4>
+                    <p class="text-gray-600">Internationally recognized education standards</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Islamic Studies Section -->
+<section class="py-16 lg:py-24 bg-gray-50">
+    <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+        <div class="text-center mb-16">
+            <h2 class="text-3xl lg:text-4xl font-bold text-gray-800 mb-4">Islamic Studies & Values</h2>
+            <div class="w-20 h-1 bg-orange-400 mx-auto mb-6"></div>
+            <p class="text-lg text-gray-600 max-w-3xl mx-auto">
+                Alongside our Cambridge curriculum, we provide comprehensive Islamic education to nurture
+                spiritual growth and moral development in our students.
+            </p>
+        </div>
+
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+            <!-- Image Placeholder -->
+            <div class="bg-gradient-to-br from-green-100 to-green-200 rounded-2xl p-8 h-96 flex items-center justify-center">
+                <div class="text-center">
+                    <div class="w-24 h-24 bg-white rounded-full flex items-center justify-center mx-auto mb-4">
+                        <span class="icon-[tabler--mosque] text-green-600 size-12"></span>
+                    </div>
+                    <h4 class="text-xl font-bold text-gray-800 mb-2">Islamic Foundation</h4>
+                    <p class="text-gray-600">Building strong character through Islamic teachings</p>
+                </div>
+            </div>
+
+            <!-- Content -->
+            <div class="space-y-8">
+                <div class="flex items-start gap-4">
+                    <div class="w-12 h-12 bg-green-100 rounded-full flex items-center justify-center flex-shrink-0">
+                        <span class="icon-[tabler--book-2] text-green-600 size-6"></span>
+                    </div>
+                    <div>
+                        <h3 class="text-xl font-bold text-gray-800 mb-2">Quran & Hadith Studies</h3>
+                        <p class="text-gray-600">
+                            Comprehensive study of the Holy Quran and Hadith, helping students understand
+                            and apply Islamic principles in their daily lives.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="flex items-start gap-4">
+                    <div class="w-12 h-12 bg-green-100 rounded-full flex items-center justify-center flex-shrink-0">
+                        <span class="icon-[tabler--heart] text-green-600 size-6"></span>
+                    </div>
+                    <div>
+                        <h3 class="text-xl font-bold text-gray-800 mb-2">Character Development</h3>
+                        <p class="text-gray-600">
+                            Focus on developing strong moral character, compassion, integrity, and respect
+                            for others through Islamic teachings and values.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="flex items-start gap-4">
+                    <div class="w-12 h-12 bg-green-100 rounded-full flex items-center justify-center flex-shrink-0">
+                        <span class="icon-[tabler--peace] text-green-600 size-6"></span>
+                    </div>
+                    <div>
+                        <h3 class="text-xl font-bold text-gray-800 mb-2">Spiritual Growth</h3>
+                        <p class="text-gray-600">
+                            Regular prayer times, Islamic history lessons, and spiritual guidance to help
+                            students develop a strong connection with their faith.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Key Stage Programs -->
+<section class="py-16 lg:py-24 bg-white">
+    <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+        <div class="text-center mb-16">
+            <h2 class="text-3xl lg:text-4xl font-bold text-gray-800 mb-4">Key Stage Programs</h2>
+            <div class="w-20 h-1 bg-orange-400 mx-auto mb-6"></div>
+            <p class="text-lg text-gray-600 max-w-3xl mx-auto">
+                Our academic programs are structured according to Cambridge International standards,
+                ensuring progressive learning at every level.
+            </p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <!-- Early Years Foundation Stage -->
+            <div class="bg-white rounded-2xl p-8 shadow-lg border border-gray-200 hover:shadow-xl transition-shadow duration-300">
+                <div class="w-16 h-16 bg-orange-100 rounded-full flex items-center justify-center mb-6">
+                    <span class="icon-[tabler--baby-carriage] text-orange-500 size-8"></span>
+                </div>
+                <h3 class="text-xl font-bold text-gray-800 mb-4">Early Years (Ages 3-5)</h3>
+                <p class="text-gray-600 mb-4">
+                    Foundation stage focusing on play-based learning, early literacy, numeracy, and basic Islamic concepts.
+                </p>
+                <ul class="text-sm text-gray-600 space-y-2">
+                    <li class="flex items-center gap-2">
+                        <span class="icon-[tabler--check] text-green-500 size-4"></span>
+                        Playgroup & Nursery
+                    </li>
+                    <li class="flex items-center gap-2">
+                        <span class="icon-[tabler--check] text-green-500 size-4"></span>
+                        Lower & Upper KG
+                    </li>
+                    <li class="flex items-center gap-2">
+                        <span class="icon-[tabler--check] text-green-500 size-4"></span>
+                        Basic Arabic & Islamic Values
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Primary Stage -->
+            <div class="bg-white rounded-2xl p-8 shadow-lg border border-gray-200 hover:shadow-xl transition-shadow duration-300">
+                <div class="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mb-6">
+                    <span class="icon-[tabler--book] text-blue-500 size-8"></span>
+                </div>
+                <h3 class="text-xl font-bold text-gray-800 mb-4">Primary Stage (Ages 5-11)</h3>
+                <p class="text-gray-600 mb-4">
+                    Cambridge Primary curriculum with core subjects and enhanced Islamic Studies program.
+                </p>
+                <ul class="text-sm text-gray-600 space-y-2">
+                    <li class="flex items-center gap-2">
+                        <span class="icon-[tabler--check] text-green-500 size-4"></span>
+                        Grade I to Grade V
+                    </li>
+                    <li class="flex items-center gap-2">
+                        <span class="icon-[tabler--check] text-green-500 size-4"></span>
+                        English, Math, Science
+                    </li>
+                    <li class="flex items-center gap-2">
+                        <span class="icon-[tabler--check] text-green-500 size-4"></span>
+                        Quran Memorization
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Lower Secondary -->
+            <div class="bg-white rounded-2xl p-8 shadow-lg border border-gray-200 hover:shadow-xl transition-shadow duration-300">
+                <div class="w-16 h-16 bg-purple-100 rounded-full flex items-center justify-center mb-6">
+                    <span class="icon-[tabler--certificate] text-purple-500 size-8"></span>
+                </div>
+                <h3 class="text-xl font-bold text-gray-800 mb-4">Lower Secondary (Ages 11-14)</h3>
+                <p class="text-gray-600 mb-4">
+                    Cambridge Lower Secondary preparing students for international examinations with Islamic foundation.
+                </p>
+                <ul class="text-sm text-gray-600 space-y-2">
+                    <li class="flex items-center gap-2">
+                        <span class="icon-[tabler--check] text-green-500 size-4"></span>
+                        Grade VI to Grade VIII
+                    </li>
+                    <li class="flex items-center gap-2">
+                        <span class="icon-[tabler--check] text-green-500 size-4"></span>
+                        Advanced Subjects
+                    </li>
+                    <li class="flex items-center gap-2">
+                        <span class="icon-[tabler--check] text-green-500 size-4"></span>
+                        Islamic History & Fiqh
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Why Choose Our Academics -->
+<section class="py-16 lg:py-24 bg-orange-50">
+    <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+        <div class="text-center mb-16">
+            <h2 class="text-3xl lg:text-4xl font-bold text-gray-800 mb-4">Why Choose Our Academic Program?</h2>
+            <div class="w-20 h-1 bg-orange-400 mx-auto"></div>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+            <div class="text-center">
+                <div class="w-20 h-20 bg-white rounded-full flex items-center justify-center mx-auto mb-4 shadow-lg">
+                    <span class="icon-[tabler--award] text-orange-500 size-10"></span>
+                </div>
+                <h3 class="text-lg font-bold text-gray-800 mb-2">Excellence</h3>
+                <p class="text-gray-600 text-sm">Internationally recognized Cambridge qualifications</p>
+            </div>
+
+            <div class="text-center">
+                <div class="w-20 h-20 bg-white rounded-full flex items-center justify-center mx-auto mb-4 shadow-lg">
+                    <span class="icon-[tabler--heart-handshake] text-orange-500 size-10"></span>
+                </div>
+                <h3 class="text-lg font-bold text-gray-800 mb-2">Values</h3>
+                <p class="text-gray-600 text-sm">Strong Islamic foundation and moral development</p>
+            </div>
+
+            <div class="text-center">
+                <div class="w-20 h-20 bg-white rounded-full flex items-center justify-center mx-auto mb-4 shadow-lg">
+                    <span class="icon-[tabler--users-group] text-orange-500 size-10"></span>
+                </div>
+                <h3 class="text-lg font-bold text-gray-800 mb-2">Community</h3>
+                <p class="text-gray-600 text-sm">Supportive learning environment with qualified teachers</p>
+            </div>
+
+            <div class="text-center">
+                <div class="w-20 h-20 bg-white rounded-full flex items-center justify-center mx-auto mb-4 shadow-lg">
+                    <span class="icon-[tabler--rocket] text-orange-500 size-10"></span>
+                </div>
+                <h3 class="text-lg font-bold text-gray-800 mb-2">Future Ready</h3>
+                <p class="text-gray-600 text-sm">Preparing students for global university admissions</p>
+            </div>
+        </div>
+
+        <!-- Call to Action -->
+        <div class="mt-16 text-center">
+            <div class="bg-white rounded-2xl p-8 shadow-lg border border-gray-200 max-w-2xl mx-auto">
+                <h3 class="text-2xl font-bold text-gray-800 mb-4">Ready to Join Our Academic Journey?</h3>
+                <p class="text-gray-600 mb-6">
+                    Discover how our Cambridge curriculum with Islamic values can shape your child's future.
+                </p>
+                <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                    <a href="@Url.Page("/Contact")" class="bg-orange-400 hover:bg-orange-500 text-white px-8 py-3 rounded-full font-semibold transition-colors duration-200 inline-flex items-center justify-center gap-2">
+                        Contact Us
+                        <span class="icon-[tabler--arrow-right] size-5"></span>
+                    </a>
+                    <a href="@Url.Page("/Fees")" class="bg-white hover:bg-gray-50 text-gray-800 border-2 border-gray-200 px-8 py-3 rounded-full font-semibold transition-colors duration-200 inline-flex items-center justify-center gap-2">
+                        View Fees
+                        <span class="icon-[tabler--currency-taka] size-5"></span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
